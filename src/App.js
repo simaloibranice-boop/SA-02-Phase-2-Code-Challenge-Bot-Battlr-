@@ -5,7 +5,7 @@ import "./App.css";
 import botData from "./db.json";
 
 function App () {
-    const[bots, setBots] = useState(botData);
+    const[bots, setBots] = useState(botData.bots);
     const [army, setArmy] = useState([]);
    
 
