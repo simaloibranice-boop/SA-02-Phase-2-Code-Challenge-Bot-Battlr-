@@ -5,8 +5,9 @@ import "./App.css";
 import botData from "./db.json";
 
 function App () {
-    const botData = [
-       {
+
+  const botData = [
+    {
             "id": 101,
             "name": "wHz-93",
             "health": 90,
@@ -26,7 +27,7 @@ function App () {
             "catchphrase": "0110011100000100011110100110011000011001",
             "avatar_url": "https://robohash.org/quidemconsequaturaut.png?size=300x300&set=set1"
         }
-    ]
+  ];
     const[bots, setBots] = useState(botData);
     const [army, setArmy] = useState([]);
    
