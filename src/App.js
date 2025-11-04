@@ -7,7 +7,7 @@ function App () {
     const[bots, setBots] = useState([]);
     const [army, setArmy] = useState([]);
     useEffect(() => {
-        fetch("https://localhost:8001/bots")
+        fetch("https://localhost:3000/bots")
          .then((r) => r.json())
          .then((data) => setBots(data)); 
     }, [])
