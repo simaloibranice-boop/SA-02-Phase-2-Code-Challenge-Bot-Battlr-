@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import BotCollection from "./components/BotCollection";
 import YourBotArmy from "./components/YourBotArmy";
 import "./App.css";
+import botData from "./db.json";
 
 function App () {
-    const[bots, setBots] = useState([]);
+    const[bots, setBots] = useState([botData.bots]);
     const [army, setArmy] = useState([]);
     useEffect(() => {
-        fetch("https://localhost:3000/bots")
+        fetch("https://localhost:8001/bots")
          .then((r) => r.json())
          .then((data) => setBots(data)); 
     }, [])
